@@ -1,0 +1,11 @@
+<div>
+    Blog: {{blog.id}}<br>
+    Title: {{blog.title}}<br>
+    Description: {{blog.description}}<br>
+    Author: {{blog.author}}<br>
+    Comments: {{blog.comments.join('   |   ')}}<br>
+    <button (click)="editBlog(blog.id)">Edit</button>
+    <button (click)="deleteBlog(blog.id)">Delete</button>
+    <br>
+    <br>
+</div>
